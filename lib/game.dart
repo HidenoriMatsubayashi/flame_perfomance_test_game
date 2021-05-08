@@ -14,7 +14,9 @@ class SpaceShooterGame extends BaseGame with PanDetector, HasCollidables {
 
   int score = 0;
 
-  final debugTextconfig = TextConfig(color: Color(0xFFFFFFFF));
+  final debugTextconfig = TextPaint(
+    config: TextPaintConfig(color: const Color(0xFFFFFFFF)),
+  );
 
   @override
   Future<void> onLoad() async {
@@ -50,8 +52,8 @@ class SpaceShooterGame extends BaseGame with PanDetector, HasCollidables {
   }
 
   @override
-  void onPanUpdate(DragUpdateDetails details) {
-    player?.move(details.delta.dx, details.delta.dy);
+  void onPanUpdate(DragUpdateInfo info) {
+    player?.move(info.delta.global.x, info.delta.global.y);
   }
 
   void increaseScore() {

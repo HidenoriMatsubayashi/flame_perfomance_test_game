@@ -1,13 +1,10 @@
 import 'package:flame/components.dart';
 
-import 'dart:ui';
-
 import '../game.dart';
 
 class ScoreComponent extends TextComponent with HasGameRef<SpaceShooterGame> {
   ScoreComponent() : super(
       "Score 0",
-      config: TextConfig(color: Color(0xffffffff)),
       position: Vector2.all(5),
   );
 

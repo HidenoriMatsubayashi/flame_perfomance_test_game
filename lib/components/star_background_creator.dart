@@ -12,8 +12,8 @@ class StarBackGroundCreator extends Component with HasGameRef<SpaceShooterGame>{
   static const star_speed = 10;
   final gapSize = 12;
 
-  Timer starCreator;
-  SpriteSheet starsSpritesheet;
+  late final Timer starCreator;
+  late final SpriteSheet starsSpritesheet;
   Random random = Random();
 
   StarBackGroundCreator();

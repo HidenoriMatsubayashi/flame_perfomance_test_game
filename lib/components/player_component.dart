@@ -12,7 +12,7 @@ import './explosion_component.dart';
 class PlayerComponent extends SpriteAnimationComponent with HasGameRef<SpaceShooterGame>, Hitbox, Collidable {
 
   bool destroyed = false;
-  Timer bulletCreator;
+  late final Timer bulletCreator;
 
   PlayerComponent(): super(size: Vector2(50, 75), position: Vector2(100, 500)) {
     bulletCreator = Timer(0.05, repeat: true, callback: _createBullet);

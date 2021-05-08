@@ -10,7 +10,7 @@ import './components/score_component.dart';
 
 class SpaceShooterGame extends BaseGame with PanDetector, HasCollidables {
 
-  PlayerComponent player;
+  PlayerComponent? player;
 
   int score = 0;
 
@@ -61,7 +61,7 @@ class SpaceShooterGame extends BaseGame with PanDetector, HasCollidables {
   }
 
   void playerTakeHit() {
-    player.takeHit();
+    player!.takeHit();
     score = 0;
   }
 }

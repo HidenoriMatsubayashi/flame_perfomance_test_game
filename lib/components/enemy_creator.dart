@@ -10,7 +10,7 @@ import './enemy_component.dart';
 
 class EnemyCreator extends Component with HasGameRef<SpaceShooterGame>{
 
-  Timer enemyCreator;
+  late final Timer enemyCreator;
 
   Random random = Random();
 

@@ -22,7 +22,7 @@ class SpaceShooterGame extends BaseGame with PanDetector, HasCollidables {
   Future<void> onLoad() async {
     add(player = PlayerComponent());
 
-    //add(EnemyCreator());
+    add(EnemyCreator());
     add(StarBackGroundCreator());
 
     add(ScoreComponent());

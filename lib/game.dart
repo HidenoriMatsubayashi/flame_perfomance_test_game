@@ -57,7 +57,7 @@ class SpaceShooterGame extends BaseGame with HasCollidables {
 
   static XAxis? currentX; // `null` means not currently pressed
   static YAxis? currentY;
-  static const double distance = 250;
+  static const double distance = 375;
 
   @override
   void update(double dt) {
@@ -156,6 +156,7 @@ class SpaceShooterGame extends BaseGame with HasCollidables {
 
   @override
   void render(Canvas canvas) {
+    canvas.scale(1);
     super.render(canvas);
 
     debugTextconfig.render(canvas, fps(120).toString(), Vector2(0, 50));

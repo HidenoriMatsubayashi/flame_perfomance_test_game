@@ -34,10 +34,10 @@ class PlayerComponent extends SpriteAnimationComponent with HasGameRef<SpaceShoo
     final bulletY = y + 20;
 
     gameRef.add(BulletComponent(bulletX, bulletY));
-    gameRef.add(BulletComponent(bulletX, bulletY, xDirection: 0.5));
-    gameRef.add(BulletComponent(bulletX, bulletY, xDirection: 0.3));
-    gameRef.add(BulletComponent(bulletX, bulletY, xDirection: -0.5));
-    gameRef.add(BulletComponent(bulletX, bulletY, xDirection: -0.3));
+    //gameRef.add(BulletComponent(bulletX, bulletY, xDirection: 0.5));
+    //gameRef.add(BulletComponent(bulletX, bulletY, xDirection: 0.3));
+    //gameRef.add(BulletComponent(bulletX, bulletY, xDirection: -0.5));
+    //gameRef.add(BulletComponent(bulletX, bulletY, xDirection: -0.3));
   }
 
   void beginFire() {

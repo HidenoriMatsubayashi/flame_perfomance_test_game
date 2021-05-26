@@ -1,8 +1,6 @@
 name: rogue_shooter
 description: A new Flutter project.
 
-publish_to: none # this has local path dependencies
-
 version: 1.0.0+1
 
 environment:
@@ -12,8 +10,6 @@ dependencies:
   flutter:
     sdk: flutter
   flame: '1.0.0-releasecandidate.11'
-  joystick_plugin:
-    path: ../../joystick_plugin/
 
 dev_dependencies:
   flutter_test:

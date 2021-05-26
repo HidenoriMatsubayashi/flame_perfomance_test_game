@@ -3,7 +3,6 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
-  joystick_plugin
 )
 
 set(PLUGIN_BUNDLED_LIBRARIES)

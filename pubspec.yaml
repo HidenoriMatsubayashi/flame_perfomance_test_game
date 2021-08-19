@@ -12,8 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   flame: '1.0.0-releasecandidate.11'
-  joystick_plugin:
-    path: ../../joystick_plugin/
+  #joystick_plugin:
+  #  path: ../../joystick_plugin/
 
 dev_dependencies:
   flutter_test:
